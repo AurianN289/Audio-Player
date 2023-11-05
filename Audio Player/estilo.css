@@ -1,0 +1,158 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #9c9dbe;
+    color: #1a1a1a;
+    width: 28vw;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+.parte1{ 
+    width: 100%;
+    height: 45%;
+}
+
+.parte1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.parte2{
+    width: 100%;
+    height: 10%;
+}
+.parte2 h1{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.parte2 h2{
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.parte3{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.parte3 .barra{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80%;
+    grid-template-areas: "A";
+    margin: 0 5px;
+    align-items: center;
+    justify-items: center;
+} 
+.barra .preencher{
+    width: 100%;
+    height: 10px;
+    grid-area: A;
+    border: 2px solid #363636;
+    border-radius: 7px;
+}
+
+.barra .preenchido{
+    width: 100%;
+    grid-area: A;
+    display: flex;
+    align-items: center;
+}
+
+.barra .preenchido progress{
+    width: 0;
+    height: 25px;
+}
+
+.barra .ponto{
+    width: 20px;
+    height: 20px;
+    grid-area: A;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -5px;
+    z-index: 2;
+}
+
+.contagem{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+}
+
+.contagem p{
+    margin: 0;
+}
+
+.parte4{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.parte4 button{
+    border: none;
+    background: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+.parte4 button:hover{
+    background: #eeeeee7d;
+}
+
+.parte4 button:active{
+    background: #eeeeee96;
+}
+
+.parte4 .controles{
+    display: flex;
+    justify-content: space-around;
+}
+
+.parte4 .funcoes{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5px;
+}
+
+.parte4 .controles button img{
+    max-width: 100%;
+}
+.parte4 .funcoes button img{
+    max-width: 100%;
+}
+.parte4 .funcoes button{
+    width: 35px;
+    height: 35px;
+}
+
+.anterior{
+    transform: rotate(180deg);
+}
